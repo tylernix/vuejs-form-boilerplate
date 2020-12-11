@@ -14,7 +14,7 @@
   <div id="app">
     <div class="container">
       <h1>Example form</h1>
-      <form v-on:submit.prevent="submitForm">
+      <form v-on:submit.prevent="submitForm" class="mb-2">
         <div class="form-group">
           <label for="exampleFormControlInput1">Email address</label>
           <input type="email" class="form-control" placeholder="name@example.com" v-model="form.email">
@@ -46,6 +46,7 @@
         </div>
         <button class="btn btn-primary" type="submit">Submit</button>
       </form>
+      <hr />
       <pre class="alert alert-primary">Form data: {{ form }}</pre>
       <pre class="alert alert-primary">API response: {{ info }}</pre>
     </div>
